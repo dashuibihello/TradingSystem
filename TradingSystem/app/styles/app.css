@@ -1,0 +1,416 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background-image: url(https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2753080922,3234532402&fm=26&gp=0.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  text-align: center;
+}
+
+#container {
+  height: 100%;
+  width: 100%;
+}
+
+#user {
+  float: left;
+  height: 75%;
+  width: 30%;
+  color: white;
+}
+
+#AppInformation {
+  float: left;
+  position: absolute;
+  top: 75%;
+  height: 25%;
+  width: 30%;
+  color: white;
+}
+
+#goods {
+  color: white;
+  float: left;
+  margin-right: 0px;
+  height: 100%;
+  width: 70%;
+}
+
+#userRegist {
+  height: 100%;
+  width: 100%;
+}
+
+#userInformation {
+  height: 100%;
+  width: 100%;
+}
+
+#regist {
+  margin-bottom: auto;
+  margin-left: 35%;
+  margin-right: 35%;
+  display: inline-block;
+
+  width: 30%;
+  height: 10%;
+  font-size: 16px;
+  border-radius: 5px;
+  background-color: rgb(243, 174, 70);
+  color: white;
+  box-shadow: 10px 10px 5px #888888;
+  -moz-box-shadow: 5px 10px 5px #888888;
+  -webkit-box-shadow: 10px 10px 5px #888888;
+}
+
+.forminput {
+  text-align: justify;
+  width: 100%;
+  height: 15%;
+  overflow: hidden;
+  clear: both;
+}
+
+.myinput {
+  line-height: 20px;
+  width: 200px;
+  font-size: 20px;
+  height: 30px;
+  margin-left: 20px;
+  padding: 0 2px;
+  border: 1px solid #ccc;
+}
+
+span {
+  font-size: 20px;
+  display: inline-block;
+  width: 200px;
+  text-align: right;
+}
+
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: inline-block;  
+}
+
+#headPortrait {
+  margin-left: 40%;
+  margin-right: 40%;
+  width: 20%;
+  height: 20%;
+}
+
+.information {
+  text-align: center;
+  line-height: 20px;
+  width: 100%;
+  font-size: 20px;
+  color: rgb(43, 40, 233)
+}
+
+#status {
+  width: 90%;
+  text-align: justify;
+  margin: 5px;
+  color: rgb(255, 4, 4);
+}
+
+#Introduction {
+  width: 100%;;
+  height: 80%;
+}
+
+#Introduction h1 {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+#Contact {
+  text-align: center;
+  font-size: 10px;
+  height: 20%;
+}
+
+#Content {
+  text-align: justify;
+  margin-left: 5%;
+  width: 90%;
+}
+
+#goodsforsell {
+  width: 100%;
+  height: 80%;
+}
+
+#showGoods {
+  width: 90%;
+  height: 90%;
+  margin-left: 5%;
+  background-color: #fcf5f5;
+  color: white;
+  opacity: 0.8;
+  border-radius: 5%;
+  border: 2px solid grey;
+  overflow-y: auto;
+}
+
+#control {
+  width: 80%;
+  margin-left: 10%;
+  text-align: center;
+}
+
+.sellgoods {
+  float: left;
+  width: 21%;
+  height: 48%;
+  margin-left: 3%;
+  margin-top: 1.5%;
+}
+
+.showagoods {
+  overflow-y: auto;
+  width: 100%;
+  height: 85%;
+  border-radius: 5%;
+  border: 1px solid rgb(6, 7, 0);
+  background-color: #aca9a9;
+}
+
+.goodsphoto {
+  margin-top: 2%;
+  width: 20%;
+  height: 20%;
+  margin-left: 40%;
+}
+
+.goodsInformation {
+  text-align: justify;
+  padding-left: 5px;
+  font-style:italic;
+  color: rgb(129, 246, 250);
+}
+
+.showagoods p {
+  display: inline-block;
+}
+
+.showagoods span {
+  width: 140px;
+}
+
+.buyGoods {
+  margin-top: 1%;
+  margin-bottom: auto;
+  display: inline-block;
+
+  width: 40%;
+  height: 10%;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 5px;
+  background-color: rgb(248, 218, 174);
+  color: rgba(248, 53, 53, 0.993);
+}
+
+.count {
+  display: inline-block;
+  text-align: center;
+  line-height: 5px;
+  width: 20%;
+  font-size: 10px;
+  height: 6%;
+  border: 1px solid #ccc;
+  color: black;
+}
+
+.countSpan {
+  color: #888888;
+  width: 30%;
+}
+
+#Linformation {
+  width: 100%;
+  height: 30%;
+}
+
+#Linformation p {
+  font-size: 16px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+#Linformation span {
+  font-size: 18px;
+}
+
+#getBalance {
+  display: inline-block;
+
+  width: 25%;
+  height: 10%;
+  margin-left: 5%;
+  font-size: 10px;
+  font-weight: bold;
+  border-radius: 5px;
+  background-color: rgb(255, 158, 13);
+  color: rgba(219, 248, 53, 0.993);
+}
+
+#addGoods {
+  width: 100%;
+  height: 35%;
+}
+
+#addGoods .forminput {
+  margin-top: 1%;
+  height: 18%;
+}
+
+#addAGoods {
+  margin-bottom: auto;
+  margin-left: 35%;
+  margin-right: 35%;
+  display: inline-block;
+
+  width: 30%;
+  height: 10%;
+  font-size: 16px;
+  border-radius: 5px;
+  background-color: rgb(243, 174, 70);
+  color: white;
+  box-shadow: 10px 10px 5px #888888;
+  -moz-box-shadow: 5px 10px 5px #888888;
+  -webkit-box-shadow: 10px 10px 5px #888888;
+}
+
+.deleteGoods {
+  margin-top: 1%;
+  display: inline-block;
+
+  width: 40%;
+  height: 10%;
+  margin-left: 30%;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 5px;
+  background-color: rgb(248, 218, 174);
+  color: rgba(110, 108, 108, 0.993);
+}
+
+.state0 {
+  color: red;
+  padding-left: 5%;
+}
+
+.state1 {
+  color: rgb(253, 250, 90);
+  padding-left: 5%;
+}
+
+.confirmPurchase {
+  margin-top: 1%;
+  display: inline-block;
+
+  width: 40%;
+  height: 10%;
+  margin-left: 30%;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 5px;
+  background-color: rgb(236, 252, 16);
+  color: rgba(255, 0, 0, 0.993);
+}
+
+.confirmReceive {
+  margin-top: 1%;
+  display: inline-block;
+
+  width: 40%;
+  height: 10%;
+  margin-left: 30%;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 5px;
+  background-color: rgb(4, 112, 126);
+  color: rgba(239, 243, 6, 0.993);
+}
+
+.showPurchase0 {
+  overflow-y: auto;
+  width: 100%;
+  height: 85%;
+  border-radius: 5%;
+  border: 1px solid rgb(6, 7, 0);
+  background-color: rgb(236, 252, 16);
+}
+
+.showPurchase0 span {
+  font-size: 16px;
+  width: 90px;
+  height: 5%;
+  width: 100px;
+  color: black;
+}
+
+.showPurchase0 p {
+  padding-left: 5%;
+  color: red;
+  display: inline-block;
+}
+
+.showPurchase1 {
+  overflow-y: auto;
+  width: 100%;
+  height: 85%;
+  border-radius: 5%;
+  border: 1px solid rgb(6, 7, 0);
+  background-color: #1d727e;
+}
+
+.showPurchase1 span {
+  font-size: 16px;
+  width: 90px;
+  height: 5%;
+  color: rgb(177, 235, 250);
+}
+
+.showPurchase1 p {
+  padding-left: 5%;
+  color: rgb(253, 250, 90);
+  display: inline-block;
+}
+
+.showPurchase2 {
+  overflow-y: auto;
+  width: 100%;
+  height: 85%;
+  border-radius: 5%;
+  border: 1px solid rgb(6, 7, 0);
+  background-color: #55105e;
+}
+
+.showPurchase2 span {
+  font-size: 16px;
+  width: 100px;
+  height: 5%;
+  color: rgb(66, 255, 8);
+}
+
+.showPurchase2 p {
+  color: rgb(255, 255, 255);
+  display: inline-block;
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!-- saved from url=(0045)file:///C:/Users/DELL/Desktop/test/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>TradingSystem</title>
+  
+  <link href="./TradingSystem_files/css" rel="stylesheet" type="text/css">
+  <script src="./TradingSystem_files/jquery-3.1.1.slim.min.js.下载"></script>
+  <link href="./TradingSystem_files/app.css" rel="stylesheet" type="text/css">
+  <script src="file:///C:/Users/DELL/Desktop/test/app.js"></script>
+</head>
+<body>
+  <div id="container">    
+    <div id="user">
+      <div id="userRegist" class="hide">
+        <h1>Sign in Or Sign up</h1>
+        <div class="forminput">
+          <label><span>Username:</span><input type="text" id="username" class="myinput" value=""></label>
+        </div>
+        <div class="forminput">
+          <label><span>Password:</span><input type="text" id="password" class="myinput" value=""></label>
+        </div>
+        <div class="forminput">
+          <label>
+            <span>Accounts:</span>
+            <select class="myinput" id="account">
+              <option value="0">eth.accounts[0]</option>
+              <option value="1">eth.accounts[1]</option>
+              <option value="2">eth.accounts[2]</option>
+              <option value="3">eth.accounts[3]</option>
+              <option value="4">eth.accounts[4]</option>
+              <option value="5">eth.accounts[5]</option>
+              <option value="6">eth.accounts[6]</option>
+              <option value="7">eth.accounts[7]</option>
+              <option value="8">eth.accounts[8]</option>
+              <option value="9">eth.accounts[9]</option>
+            </select>
+          </label>
+        </div>
+        <div class="forminput">
+          <span id="status"></span>
+        </div>
+        <button id="regist" onclick="App.SigninOrup()">Sign in/ Sign up</button>      
+      </div>     
+      <div id="userInformation" class="show">
+        <h1>User signed in</h1>
+        <img id="headPortrait" src="./TradingSystem_files/u=3042196673,3973149549&amp;fm=26&amp;gp=0.jpg" alt="Head portrait">
+        <div id="Linformation">
+            <label><span>Username:</span><p class="information" id="Lusername">0</p></label>
+            <label><span>Account:</span><p class="information" id="Laccount">0x7c32b8bf6775420476a2b44b9e5fa2bcc35551b1</p></label>
+            <label><span>Balance:</span><p class="information" id="Laccount">123</p></label>
+        </div>
+        <div id="addGoods">
+          <div class="forminput">
+              <label><span>name:</span><input type="text" id="goodsName" class="myinput" value=""></label>
+            </div>
+          <div class="forminput">
+            <label><span>Information:</span><input type="text" id="addGoodsInformation" class="myinput" value=""></label>
+          </div>
+          <div class="forminput">
+              <label><span>Price:</span><input type="text" id="goodsPrice" class="myinput" value=""></label>
+            </div>
+          <div class="forminput">
+            <label><span>Count:</span><input type="text" id="goodsCount" class="myinput" value=""></label>
+          </div>
+          <button id="addAGoods" onclick="App.addGoods()">Add Goods</button> 
+        </div>
+      </div>
+    </div>
+    <div id="goods">
+      <div id="goodsforsell">
+        <h1>List of Goods</h1>
+        <div id="showGoods">
+        </div>
+      </div>
+      <div id="control">
+        <div class="forminput">
+          <label>
+            <span>Merchant account:</span>
+            <select class="myinput" id="merchants" onchange="App.changeGoodsList()">
+              <option value="0">eth.accounts[0]</option>
+              <option value="1">eth.accounts[1]</option>
+              <option value="2">eth.accounts[2]</option>
+              <option value="3">eth.accounts[3]</option>
+              <option value="4">eth.accounts[4]</option>
+              <option value="5">eth.accounts[5]</option>
+              <option value="6">eth.accounts[6]</option>
+              <option value="7">eth.accounts[7]</option>
+              <option value="8">eth.accounts[8]</option>
+              <option value="9">eth.accounts[9]</option>
+            </select>
+          </label>
+          <label>
+              <span>BuyOrSell:</span>
+              <select class="myinput" id="BuyOrSell" onchange="App.goToPurchaseList()">
+                <option value="0">Commodity list</option>
+                <option value="1">Purchase list</option>
+              </select>
+            </label>
+        </div>
+      </div>
+    </div>
+    <div id="AppInformation">
+      <div id="Introduction">
+          <h1>Here is my TradingSystem</h1>
+          <div id="Content">
+            <p>Each account can only be registered once. 
+              If you have already registered, you can log in with your username and password.
+              Every logged-in user can publish or buy an item (if you have an adequate balance). 
+              The seller will receive payment after the buyer confirms receipt of the goods. 
+              This will ensure the security of the transaction. You can view the report on github below for details
+            </p>
+          </div>
+      </div>
+      <div id="Contact">
+        <i>Contact:895118352@qq.com</i><br>
+        <a href="https://github.com/dashuibihello">Github @dashuibihello</a>
+      </div>
+    </div>
+  </div>
+
+
+</body></html>
