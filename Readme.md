@@ -1,60 +1,7 @@
 # TradingSystem
 
 
-<!-- TOC -->
-- [TradingSystem](#tradingsystem)    
-    - [一、选题背景](#一选题背景)    
-    - [二、项目说明](#二项目说明)        
-        - [实验环境](#实验环境)        
-        - [项目涉及内容](#项目涉及内容)        
-        - [项目已经实现的功能](#项目已经实现的功能)            
-        - [ps:](#ps)    
-    - [三、项目环境准备](#三项目环境准备)        
-        - [Linux](#linux)        
-        - [Windows](#windows)           
-            - [node.Js](#nodejs)            
-            - [truffle](#truffle)            
-            - [ganache](#ganache)            
-            - [其他可能问题](#其他可能问题)    
-    - [四、创建初始项目](#四创建初始项目)    
-    - [五、智能合约说明](#五智能合约说明)        
-        - [总体说明](#总体说明)        
-        - [Solidity版本](#solidity版本)        
-        - [TradingSystem](#tradingsystem-1)            
-            - [结构及映射](#结构及映射)            
-            - [部分函数说明](#部分函数说明)                
-                - [注册与登录 registOrLogin()](#注册与登录-registorlogin)   
-                - [增加商品 addGoods()](#增加商品-addgoods)                
-                - [删除商品 deleteGoods()](#删除商品-deletegoods)              
-                - [发起购买 buyGoods()](#发起购买-buygoods)                
-                - [确认购买 confirmPurchase()](#确认购买-confirmpurchase) 
-                - [确认收货 confirmReceived()](#确认收货-confirmreceived)
-        - [Purchase](#purchase)            
-            - [变量](#变量)           
-                - [部分函数说明](#部分函数说明-1)                
-                - [确认购买所处的状态](#确认购买所处的状态)                
-                - [设置购买的信息 setPurchase()](#设置购买的信息-setpurchase)                
-                - [确认购买 confirmPurchase()，](#确认购买-confirmpurchase)                
-                - [确认收货 confirmReceived()](#确认收货-confirmreceived-1)   
-    - [六、智能合约部署及测试](#六智能合约部署及测试)    
-    - [七、Web前端开发](#七web前端开发)        
-        - [总体设计思路](#总体设计思路)        
-        - [部分函数设计](#部分函数设计)            
-            - [获取Web3.provider](#获取web3provider)            
-            - [注册与登陆](#注册与登陆)            
-            - [删除商品](#删除商品)            
-            - [展示自己的商品列表](#展示自己的商品列表)    
-    - [八、TradingSystem说明](#八tradingsystem说明)        
-        - [用户未登录的界面：](#用户未登录的界面)        
-        - [用户登录后的界面（无商品）：](#用户登录后的界面无商品)        
-        - [用户登录后的界面（有商品）](#用户登录后的界面有商品)        
-        - [用户登录后查看其他用户的商品](#用户登录后查看其他用户的商品)       
-        - [用户购买商品后的购买列表](#用户购买商品后的购买列表)    
-    - [九、TradingSystem测试](#九tradingsystem测试)    
-    - [十、项目总结](#十项目总结)        
-        - [所遇问题及解决方法](#所遇问题及解决方法)        
-        - [个人感想](#个人感想)
-        <!-- /TOC -->
+<!-- TOC -->autoauto- [TradingSystem](#tradingsystem)auto    - [一、选题背景](#一选题背景)auto    - [二、项目说明](#二项目说明)auto        - [实验环境](#实验环境)auto        - [项目上传说明](#项目上传说明)auto        - [项目涉及内容](#项目涉及内容)auto        - [项目已经实现的功能](#项目已经实现的功能)auto            - [ps:](#ps)auto    - [三、项目环境准备](#三项目环境准备)auto        - [Linux](#linux)auto        - [Windows](#windows)auto            - [node.Js](#nodejs)auto            - [truffle](#truffle)auto            - [ganache](#ganache)auto            - [其他可能问题](#其他可能问题)auto    - [四、创建初始项目](#四创建初始项目)auto    - [五、智能合约说明](#五智能合约说明)auto        - [总体说明](#总体说明)auto        - [Solidity版本](#solidity版本)auto        - [TradingSystem](#tradingsystem-1)auto            - [结构及映射](#结构及映射)auto            - [部分函数说明](#部分函数说明)auto                - [注册与登录 registOrLogin()](#注册与登录-registorlogin)auto                - [增加商品 addGoods()](#增加商品-addgoods)auto                - [删除商品 deleteGoods()](#删除商品-deletegoods)auto                - [发起购买 buyGoods()](#发起购买-buygoods)auto                - [确认购买 confirmPurchase()](#确认购买-confirmpurchase)auto                - [确认收货 confirmReceived()](#确认收货-confirmreceived)auto        - [Purchase](#purchase)auto            - [变量](#变量)auto            - [部分函数说明](#部分函数说明-1)auto                - [确认购买所处的状态](#确认购买所处的状态)auto                - [设置购买的信息 setPurchase()](#设置购买的信息-setpurchase)auto                - [确认购买 confirmPurchase()，](#确认购买-confirmpurchase)auto                - [确认收货 confirmReceived()](#确认收货-confirmreceived-1)auto    - [六、智能合约部署及测试](#六智能合约部署及测试)auto    - [七、Web前端开发](#七web前端开发)auto        - [总体设计思路](#总体设计思路)auto        - [部分函数设计](#部分函数设计)auto            - [获取Web3.provider](#获取web3provider)auto            - [注册与登陆](#注册与登陆)auto            - [删除商品](#删除商品)auto            - [展示自己的商品列表](#展示自己的商品列表)auto    - [八、TradingSystem说明](#八tradingsystem说明)auto        - [用户未登录的界面：](#用户未登录的界面)auto        - [用户登录后的界面（无商品）：](#用户登录后的界面无商品)auto        - [用户登录后的界面（有商品）](#用户登录后的界面有商品)auto        - [用户登录后查看其他用户的商品](#用户登录后查看其他用户的商品)auto        - [用户购买商品后的购买列表](#用户购买商品后的购买列表)auto    - [九、TradingSystem测试](#九tradingsystem测试)auto    - [十、项目总结](#十项目总结)auto        - [所遇问题及解决方法](#所遇问题及解决方法)auto        - [个人感想](#个人感想)autoauto<!-- /TOC -->
 
 
 ## 一、选题背景
@@ -68,6 +15,9 @@ DApp是Decentralized Application的缩写，即去中心化应用，也有人称
 
 ### 实验环境
 在部署合约和之前的阶段是在 Ubuntu 18.04 上进行实现。但是由于在装truffle unbox webpack时一直无法成功，所以将实验迁移到Windows10上进行。
+
+### 项目上传说明
+由于库node_modules库太大，所以并没有上传。如果需要测试可以尝试新建一个`truffle unbox webpack`并将相关文件放入代替其中文件即可运行
 
 ### 项目涉及内容
 本次项目涉及内容及知识较多。在前期需要了解以太坊的安装、私有链创世区块搭建，以及在交易和区块中获取的各种信息的解读。而在后期实现自己的项目时，要创建trffule项目，编写智能合约并部署，通过web3.js与合约进行交互，以及简单的前端web的设计。
