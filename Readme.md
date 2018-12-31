@@ -1,5 +1,62 @@
 # TradingSystem
 
+
+<!-- TOC -->
+- [TradingSystem](#tradingsystem)    
+    - [一、选题背景](#一选题背景)    
+    - [二、项目说明](#二项目说明)        
+        - [实验环境](#实验环境)        
+        - [项目涉及内容](#项目涉及内容)        
+        - [项目已经实现的功能](#项目已经实现的功能)            
+        - [ps:](#ps)    
+    - [三、项目环境准备](#三项目环境准备)        
+        - [Linux](#linux)        
+        - [Windows](#windows)           
+            - [node.Js](#nodejs)            
+            - [truffle](#truffle)            
+            - [ganache](#ganache)            
+            - [其他可能问题](#其他可能问题)    
+    - [四、创建初始项目](#四创建初始项目)    
+    - [五、智能合约说明](#五智能合约说明)        
+        - [总体说明](#总体说明)        
+        - [Solidity版本](#solidity版本)        
+        - [TradingSystem](#tradingsystem-1)            
+            - [结构及映射](#结构及映射)            
+            - [部分函数说明](#部分函数说明)                
+                - [注册与登录 registOrLogin()](#注册与登录-registorlogin)   
+                - [增加商品 addGoods()](#增加商品-addgoods)                
+                - [删除商品 deleteGoods()](#删除商品-deletegoods)              
+                - [发起购买 buyGoods()](#发起购买-buygoods)                
+                - [确认购买 confirmPurchase()](#确认购买-confirmpurchase) 
+                - [确认收货 confirmReceived()](#确认收货-confirmreceived)
+        - [Purchase](#purchase)            
+            - [变量](#变量)           
+                - [部分函数说明](#部分函数说明-1)                
+                - [确认购买所处的状态](#确认购买所处的状态)                
+                - [设置购买的信息 setPurchase()](#设置购买的信息-setpurchase)                
+                - [确认购买 confirmPurchase()，](#确认购买-confirmpurchase)                
+                - [确认收货 confirmReceived()](#确认收货-confirmreceived-1)   
+    - [六、智能合约部署及测试](#六智能合约部署及测试)    
+    - [七、Web前端开发](#七web前端开发)        
+        - [总体设计思路](#总体设计思路)        
+        - [部分函数设计](#部分函数设计)            
+            - [获取Web3.provider](#获取web3provider)            
+            - [注册与登陆](#注册与登陆)            
+            - [删除商品](#删除商品)            
+            - [展示自己的商品列表](#展示自己的商品列表)    
+    - [八、TradingSystem说明](#八tradingsystem说明)        
+        - [用户未登录的界面：](#用户未登录的界面)        
+        - [用户登录后的界面（无商品）：](#用户登录后的界面无商品)        
+        - [用户登录后的界面（有商品）](#用户登录后的界面有商品)        
+        - [用户登录后查看其他用户的商品](#用户登录后查看其他用户的商品)       
+        - [用户购买商品后的购买列表](#用户购买商品后的购买列表)    
+    - [九、TradingSystem测试](#九tradingsystem测试)    
+    - [十、项目总结](#十项目总结)        
+        - [所遇问题及解决方法](#所遇问题及解决方法)        
+        - [个人感想](#个人感想)
+        <!-- /TOC -->
+
+
 ## 一、选题背景
 区块链是一种分布式、去中心化的计算与存储结构。其具有去中心化、时序数据、集体维护、可编程和安全可信等特点。对于分布式节点来说，由于区块链在每个节点上都有一份完整的数据记录，每条新的交易都要被重新验证，所以区块链解决了不同节点之间的信任问题区块链由成块的交易通过密码学算法连接到一起，使得整个账本公开透明、可追踪、不可篡改。而这种安全性较高底层技术框架也在越来越多的行业得到应用。
 
@@ -504,6 +561,7 @@ showOwnGoods: function() {
 
 ## 九、TradingSystem测试
 
+在这里录制了一个[视频](http://v.youku.com/v_show/id_XMzk5MDYyMTA4MA==.html)。视频内容为用户登录后的增加删除商品，用户查看他人的商品列表和用户进行购买等内容。视频可以通过前方链接或在[github](https://github.com/dashuibihello/TradingSystem)上下载
 
 
 ## 十、项目总结
